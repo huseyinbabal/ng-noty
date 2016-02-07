@@ -7,26 +7,26 @@
                  nottySettings = settings;
             },
             $get: function () {
-                var runNoty = function (newSettings) {
+                var _noty = function (newSettings) {
                     angular.extend(settings, newSettings);
                     return noty(settings);
                 };
 
                 return {
                     show: function (message, type) {
-                        callNoty({text: message || settings.text, type: type || settings.type});
+                        _noty({text: message || settings.text, type: type || settings.type});
                     },
 
                     showAlert: function (message) {
-                        callNoty({text: message || settings.text, type: "alert"});
+                        _noty({text: message || settings.text, type: "alert"});
                     },
 
                     showSuccess: function (message) {
-                        callNoty({text: message || settings.text, type: "success"});
+                        _noty({text: message || settings.text, type: "success"});
                     },
 
                     showError: function (message) {
-                        callNoty({text: message, type: "error"});
+                        _noty({text: message, type: "error"});
                     },
 
                     closeAll: function () {
