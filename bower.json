@@ -1,0 +1,20 @@
+{
+  "name": "ng-noty",
+  "description": "Angular module for jQuery noty plugin",
+  "main": "ng-noty.js",
+  "authors": [
+    "Huseyin BABAL <huseyinbabal88@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "noty"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/huseyinbabal/ng-noty",
+  "dependencies": {
+    "noty": "~2.3.8",
+    "angular": "^1.4.0",
+    "jquery": "~2.1.1"
+  }
+}

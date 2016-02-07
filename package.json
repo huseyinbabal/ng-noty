@@ -1,0 +1,19 @@
+{
+  "name": "ng-noty",
+  "version": "0.0.1",
+  "description": "Angular module for jQuery noty plugin",
+  "main": "ng-noty.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/huseyinbabal/ng-noty.git"
+  },
+  "author": "https://github.com/huseyinbabal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huseyinbabal/ng-noty/issues"
+  },
+  "homepage": "https://github.com/huseyinbabal/ng-noty"
+}
