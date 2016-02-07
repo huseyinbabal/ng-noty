@@ -1,15 +1,15 @@
 (function (angular, $) {
     return angular.module('ngNoty', []).provider('noty', function () {
-        var nottySettings = $.noty.defaults;
+        var notySettings = $.noty.defaults;
 
         return {
             settings: function(settings) {
-                 nottySettings = settings;
+                 notySettings = settings;
             },
             $get: function () {
                 var _noty = function (newSettings) {
-                    angular.extend(settings, newSettings);
-                    return noty(settings);
+                    angular.extend(notySettings, newSettings);
+                    return noty(notySettings);
                 };
 
                 return {
