@@ -13,22 +13,26 @@
                 };
 
                 return {
-                    show: function (message, type) {
-                        _noty({text: message || settings.text, type: type || settings.type});
+                    noty: function(settings) {
+                        _noty(settings);
                     },
-
+                    show: function (message, type) {
+                        _noty({text: message , type: type});
+                    },
                     showAlert: function (message) {
-                        _noty({text: message || settings.text, type: "alert"});
+                        _noty({text: message, type: "alert"});
                     },
 
                     showSuccess: function (message) {
-                        _noty({text: message || settings.text, type: "success"});
+                        _noty({text: message, type: "success"});
                     },
 
                     showError: function (message) {
                         _noty({text: message, type: "error"});
                     },
-
+                    showInfo: function(message) {
+                        _noty({text: message, type: "information"})
+                    },
                     closeAll: function () {
                         return $.noty.closeAll()
                     },
